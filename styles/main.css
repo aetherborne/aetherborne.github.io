@@ -1,7 +1,6 @@
-
 body {
   font-family: Arial, sans-serif; 
-  background-color: #f0f0f0;
+  background-color: #2e2e2e;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +13,7 @@ header {
 }
 
 .section {
-  background-color: #fff;
+  background-color: #ffffff6c;
   border-radius: 10px;
   margin: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -32,7 +31,8 @@ header {
 
 .section-title:hover {
   background-color: #ddd;
-  transition: background-color 0.3s ease;
+  color: #333; /* Cambia el color del texto al hacer hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el color de fondo y del texto */
 }
 
 .section-content {
