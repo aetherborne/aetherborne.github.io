@@ -1,136 +1,135 @@
 body {
-    font-family: Arial, sans-serif; 
-    background-color: #f0f0f0; 
-  }
-  
-  .section-title {
-    cursor: pointer;
-    background-color: #333; 
-    color: #fff; 
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .section-title:hover {
-    background-color: #ddd;
-    transition: background-color 0.3s ease;
-  }
-  
-  .section-content {
-    display: none;
-    padding: 20px;
-  }
-  
-  .skin {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .skin img {
-    width: 1080px;
-    height: 540px;
-  }
-  
-  .skin a {
-    display: block;
-  }
-  
-  .collab-gallery {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .collab-gallery img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .collab-gallery img:hover {
-    transform: scale(1.05);
-  }
-  
-  .collab-gallery map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-  
-  .collab-gallery map area {
-    outline: none;
-  }
-  
-  .biografia {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .biografia h2 {
-    margin-top: 0;
-  }
-  
-  .biografia h3 {
-    margin-top: 20px;
-  }
-  
-  .biografia ul {
-    margin-top: 10px;
-  }
-  
-  .collab-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .collab-gallery img {
-    margin: 5px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .collab-gallery img:hover {
-    transform: scale(1.05);
-  }
-  
-  .grande {
-    font-size: 48px;
-  }
-  
-  .mediano {
-    font-size: 1.5em;
-  }
-  
-  .pequeno {
-    font-size: 80%;
-  }
-  
-  .collab-section a:hover {
-    opacity: 0.7; 
-  }
-  
-  .section:hover {
-    background-color: #ddd; 
-    transition: background-color 0.3s ease; 
-  }
-  
-  .section {
-    background-color: #fff; 
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+  font-family: Arial, sans-serif; 
+  background-color: #f0f0f0; 
+}
+
+.section-title {
+  cursor: pointer;
+  background-color: #333; 
+  color: #fff; 
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.section-title:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.section-content {
+  display: none;
+  padding: 20px;
+}
+
+.skin {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skin img {
+  width: 1080px;
+  height: 540px;
+}
+
+.skin a {
+  display: block;
+}
+
+.collab-gallery {
+  position: relative;
+  display: inline-block;
+}
+
+.collab-gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.collab-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.collab-gallery map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.collab-gallery map area {
+  outline: none;
+}
+
+.biografia {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.biografia h2 {
+  margin-top: 0;
+}
+
+.biografia h3 {
+  margin-top: 20px;
+}
+
+.biografia ul {
+  margin-top: 10px;
+}
+
+.collab-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.collab-gallery img {
+  margin: 5px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.collab-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.grande {
+  font-size: 48px;
+}
+
+.mediano {
+  font-size: 1.5em;
+}
+
+.pequeno {
+  font-size: 80%;
+}
+
+.collab-section a:hover {
+  opacity: 0.7; 
+}
+
+.section:hover {
+  background-color: #ddd; 
+  transition: background-color 0.3s ease; 
+}
+
+.section {
+  background-color: #fff; 
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
