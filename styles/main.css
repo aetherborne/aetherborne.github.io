@@ -85,8 +85,8 @@ a {
   transform: scale(1.05);s
 }
 
-/* Styles for Biography */
-.biografia {
+/* Styles for Proud Plays */
+.Proud-Plays {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -94,11 +94,11 @@ a {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.biografia h2, .biografia h3 {
+.Proud-Plays h2, .Proud-Plays h3 {
   margin-top: 0;
 }
 
-.biografia ul {
+.Proud-Plays ul {
   margin-top: 10px;
 }
 
@@ -114,6 +114,7 @@ a {
 .pequeno {
   font-size: 80%;
 }
+
 
 /* Hover Effect for Links in Collab Section */
 .collab-section a:hover {
