@@ -138,13 +138,13 @@ a {
   max-height: 1000px;
 }
 .section-content {
-  display: block;
+  display: none;
   padding: 20px;
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease; /* Agregamos una transición */
 }
 
 .section-content.active {
-  max-height: 1000px; 
+  display: block;
+  overflow: visible;
 }
+
