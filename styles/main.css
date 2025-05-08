@@ -132,8 +132,18 @@ a {
   overflow: hidden; 
   transition: max-height 0.3s ease; 
 }
+
+.section-content.active {
+  display: block;
+  max-height: 1000px;
+}
+.section-content {
+  display: none;
+  padding: 20px;
+  overflow: hidden;
+}
+
 .section-content.active {
   display: block;
   overflow: visible;
 }
-
