@@ -1,49 +1,45 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
+  // Manejo de secciones desplegables
   const sectionTitles = document.querySelectorAll(".section-title");
 
   sectionTitles.forEach(title => {
-    title.addEventListener("click", function() {
-      const sectionContent = this.nextElementSibling;
+    title.addEventListener("click", () => {
+      const content = title.nextElementSibling;
 
-      if (sectionContent.classList.contains("active")) {
-        sectionContent.style.maxHeight = "0";
-        sectionContent.classList.remove("active");
+      if (content.classList.contains("active")) {
+        content.style.height = "0";
+        content.classList.remove("active");
       } else {
-        document.querySelectorAll(".section-content").forEach(content => {
-          content.style.maxHeight = "0"; 
-          content.classList.remove("active");
+        document.querySelectorAll(".section-content").forEach(other => {
+          other.style.height = "0";
+          other.classList.remove("active");
         });
-        sectionContent.style.maxHeight = sectionContent.scrollHeight + "px"; 
-        sectionContent.classList.add("active");
+
+        content.style.height = content.scrollHeight + "px";
+        content.classList.add("active");
       }
     });
   });
 
-  document.querySelectorAll('img').forEach(img => {
-    // Crear contenedores para el efecto tilt
-    const wrapper = document.createElement('div');
-    wrapper.classList.add('tilt');
+  // Efecto Tilt en imágenes dentro de elementos .tilt
+  const tiltElements = document.querySelectorAll(".tilt");
 
-    const inner = document.createElement('div');
-    inner.classList.add('tilt-inner');
+  tiltElements.forEach(tilt => {
+    const inner = tilt.querySelector(".tilt-inner");
 
-    img.parentNode.insertBefore(wrapper, img);
-    wrapper.appendChild(inner);
-    inner.appendChild(img);
+    tilt.addEventListener("mousemove", (e) => {
+      const { width, height, left, top } = tilt.getBoundingClientRect();
+      const x = e.clientX - left;
+      const y = e.clientY - top;
 
-    wrapper.addEventListener('mousemove', (e) => {
-      const rect = wrapper.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      const rotateX = ((y / rect.height) - 0.5) * 20;
-      const rotateY = ((x / rect.width) - 0.5) * -20;
+      const rotateX = ((y / height) - 0.5) * -15;
+      const rotateY = ((x / width) - 0.5) * 15;
 
       inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     });
 
-    wrapper.addEventListener('mouseleave', () => {
-      inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    tilt.addEventListener("mouseleave", () => {
+      inner.style.transform = "rotateX(0deg) rotateY(0deg)";
     });
   });
 });
