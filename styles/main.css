@@ -190,3 +190,53 @@ a {
   background-color: #dc3545;
   color: white;
 }
+.performance-points-section {
+  background-color: #ffffff6c;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.performance-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pp-entry {
+  background-color: #2f2f2f;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 200px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.pp-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.pp-date {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.pp-status {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pp-status.unlocked {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pp-status.locked {
+  background-color: #f44336;
+  color: white;
+}
