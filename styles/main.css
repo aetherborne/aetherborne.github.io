@@ -201,42 +201,45 @@ a {
 .performance-points {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+  padding: 10px 0;
 }
 
 .pp-entry {
-  background-color: #2f2f2f;
-  border-radius: 8px;
+  background-color: #2c2c2c;
   padding: 15px;
-  flex: 1 1 200px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
   color: white;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .pp-title {
   font-size: 1.2em;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .pp-date {
   font-size: 0.9em;
   color: #ccc;
+  margin-bottom: 10px;
 }
 
 .pp-status {
-  margin-top: 10px;
+  font-size: 0.9em;
   padding: 5px;
-  border-radius: 4px;
-  font-weight: bold;
-  text-align: center;
+  border-radius: 5px;
 }
 
 .pp-status.unlocked {
-  background-color: #4caf50;
+  background-color: #28a745;
   color: white;
 }
 
 .pp-status.locked {
-  background-color: #f44336;
+  background-color: #6c757d;
   color: white;
 }
