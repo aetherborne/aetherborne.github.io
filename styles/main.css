@@ -4,6 +4,7 @@ body {
   background-color: #2e2e2e;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 header {
@@ -15,11 +16,12 @@ header {
 
 /* Styles for Sections */
 .section {
-  background-color: #ffffff6c;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   margin: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  color: white;
 }
 
 .section-title {
@@ -29,6 +31,7 @@ header {
   padding: 10px;
   border-radius: 10px 10px 0 0;
   margin: 0;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -42,18 +45,18 @@ header {
 .section-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease;
-  padding: 0 20px; /* Padding lateral */
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 20px;
 }
 
 .section-content.active {
-  max-height: 1000px; /* Esto debe ser mayor que el contenido más grande */
-  padding: 20px; /* Padding para cuando está expandido */
+  max-height: 1000px;
+  padding: 20px;
 }
 
-/* Styles for Text and Images */
+/* Text and Images */
 .skin, .equipment, .achievements-section, .biografia {
-  text-align: left; /* Align text to the left */
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -76,7 +79,7 @@ a {
   margin-bottom: 10px;
 }
 
-/* Styles for Collabs */
+/* Collabs */
 .collab-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -91,12 +94,13 @@ a {
   transform: scale(1.05);
 }
 
-/* Styles for Proud Plays */
+/* Proud Plays */
 .Proud-Plays {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
+  color: #000;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,34 +125,54 @@ a {
   font-size: 80%;
 }
 
-/* Hover Effect for Links in Collab Section */
+/* Hover for Collab Section Links */
 .collab-section a:hover {
   opacity: 0.7;
 }
+
+/* Achievements Section */
 .achievements {
   margin: 30px auto;
   padding: 20px;
   background-color: rgba(50, 50, 50, 0.8);
   border-radius: 10px;
   max-width: 800px;
+  color: white;
+}
+
+.achievements h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #ff6f61;
+  margin-bottom: 20px;
 }
 
 .achievement {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 15px 0;
   padding: 15px;
-  background-color: #333;
+  background-color: #3a3a3a;
   border-radius: 10px;
 }
 
 .achievement-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  flex: 2;
 }
 
 .achievement-date {
-  font-size: 1.2em;
-  color: #ccc;
+  font-size: 1em;
+  color: #bbb;
+  flex: 1;
+  text-align: center;
+}
+
+.achievement-status {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .achievement-status span {
